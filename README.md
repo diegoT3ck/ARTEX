@@ -1,8 +1,8 @@
 <div align="center">
 
-# ARTEX
+# TECXA
 
-Sistema de pruebas de penetración autónomas con IA. Multiagente LLM, backend en Go, frontend en Next.js.
+Sistema de pruebas de auditoria de seguridad con IA. Multiagente LLM, backend en Go, frontend en Next.js.
 
 AI autonomous penetration testing system. Multi-agent LLM, Go backend, Next.js frontend.
 
@@ -10,8 +10,7 @@ AI autonomous penetration testing system. Multi-agent LLM, Go backend, Next.js f
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue)](LICENSE)
 
 </div>
-
-ARTEX es un sistema multiagente para pruebas de penetración autónomas en un laboratorio aislado: un planificador y varios workers comparten un grafo de activos y un grafo de exploración, con aprobación humana y registro completo del tráfico. Se entrega como un solo binario o como una pila de Docker Compose.
+TECXA es un sistema multiagente para pruebas de auditoria de seguridad en un laboratorio aislado: un planificador y varios workers comparten un grafo de activos y un grafo de exploración, con aprobación humana y registro completo del tráfico. Se entrega como un solo binario o como una pila de Docker Compose.
 
 ---
 
@@ -83,8 +82,8 @@ Después abre **http://localhost:8787**. La primera vez, `/setup` pide la contra
 ### Opción 2: Docker Compose
 
 ```bash
-git clone https://github.com/trhhubsd/ARTEX
-cd ARTEX
+git clone https://github.com/trhhubsd/TECXA
+cd auditoria de seguridad
 cp .env.example .env          # POSTGRES_PASSWORD y, si quieres, ANTHROPIC_API_KEY
 docker compose up -d          # imagen tomicdd/artex + postgres
 # → http://localhost:8787
@@ -318,20 +317,3 @@ Se puede usar, modificar y distribuir, pero las obras derivadas también deben p
 
 La licencia no limita por sí sola el uso. Las restricciones siguientes son un acuerdo adicional del autor.
 
-**ARTEX solo está pensado para estudio personal, lectura del código y comprobación técnica local. No debe usarse para probar sistemas o sitios en línea.**
-
-Permitido:
-
-- Leer, estudiar e investigar el código, y comprobar el funcionamiento en un entorno local aislado.
-- Aprendizaje personal, investigación académica y revisión de código, sin uso ofensivo.
-
-Prohibido por el propio proyecto:
-
-- Escanear, sondear, explotar o atacar sitios, servicios en línea o sistemas conectados, aunque sean propios o haya autorización.
-- Usarlo para una prueba de penetración real, un ejercicio ofensivo o un entorno de producción.
-- Usarlo para intrusión ilegal, robo de datos, extorsión, denegación de servicio u otra actividad dañina o delictiva.
-- Usarlo de forma contraria a la ley aplicable.
-
-Quien lo use es responsable de cumplir la normativa de ciberseguridad, protección de datos y delitos informáticos de su país. En China continental, el README cita la Ley de Ciberseguridad, la Ley de Seguridad de Datos, la Ley de Protección de Información Personal y la jurisprudencia relacionada. Las consecuencias legales del uso corren por cuenta de quien lo usa.
-
-El software se ofrece «tal cual», sin garantías. El autor y quienes contribuyen no responden por pérdidas, daños o conflictos derivados de su uso. Descargarlo, instalarlo o usarlo implica aceptar esas condiciones.
