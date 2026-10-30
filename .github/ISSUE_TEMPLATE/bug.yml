@@ -1,0 +1,24 @@
+name: Bug
+description: Comportamiento inesperado
+title: "[Bug] "
+labels: []
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Qué ocurre
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Qué esperabas
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducirlo
+      description: Entorno, versión y pasos. No incluyas objetivos reales ni datos de terceros.
+    validations:
+      required: true
