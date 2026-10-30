@@ -1,0 +1,17 @@
+name: Task
+description: Trabajo concreto de documentación o mantenimiento
+title: "[Task] "
+labels: []
+body:
+  - type: textarea
+    id: work
+    attributes:
+      label: Qué hay que hacer
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Cómo se sabe que está hecho
+    validations:
+      required: false
